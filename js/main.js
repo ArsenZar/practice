@@ -1,9 +1,15 @@
 const elem = document.querySelector(".mainList");
+const secondElem = document.querySelectorAll(".link");
+secondElem[1].dataset.text = "TWOOO";
+console.log(secondElem[1]);
+
 
 elem.addEventListener("click", (event) => {
     event.preventDefault();
 
     console.log(event.target.getAttribute("data-text"));
+
+    console.log(event.target.dataset.text);
 
     
 })
