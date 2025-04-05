@@ -1,11 +1,10 @@
 const elem = document.querySelector(".mainList");
 
-console.log(elem);
-
 elem.addEventListener("click", (event) => {
     event.preventDefault();
 
-    console.log(event.target.classList.toggle("itsWork"));
+    console.log(event.target.getAttribute("data-text"));
+
     
 })
 
