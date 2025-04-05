@@ -5,7 +5,8 @@ console.log(elem);
 elem.addEventListener("click", (event) => {
     event.preventDefault();
 
-    console.log(event.target.href);
+    console.log(event.target.classList.toggle("itsWork"));
+    
 })
 
 // we can use querySelectorAll, and use forEach for array
