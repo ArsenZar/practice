@@ -1,3 +1,12 @@
 body{
     background-color: #c7c7c7;
 }
+.myCustomClass {
+    border: 5px solid red;
+    box-sizing: border-box;
+}
+
+.myCustomClass img{
+    border: 5px solid greenyellow;
+    box-sizing: border-box;
+}

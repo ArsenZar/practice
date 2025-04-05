@@ -8,9 +8,11 @@ elem.addEventListener("click", event => {
 
     console.log(event);
 
-    basicLightbox.create(`
-		<img src="https://ireland.apollo.olxcdn.com/v1/files/tqlxwjrycp5t2-UA/image;s=1440x960" alt="Description">
-	`).show();
+    if (event.target.dataset.text === "two") {
+      instance.show();  
+    }else{
+        instance.close();  
+    };
 
 });
 
@@ -20,6 +22,11 @@ elem.addEventListener("keydown", event => {
 
 });
 
+const instance = basicLightbox.create(`
+    <img src="https://ireland.apollo.olxcdn.com/v1/files/tqlxwjrycp5t2-UA/image;s=1440x960" alt="Description">
+`, {
+    className: "myCustomClass"
+});
 
 
 
