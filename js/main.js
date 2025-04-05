@@ -7,17 +7,25 @@ console.log(secondElem[1]);
 elem.addEventListener("click", event => {
     event.preventDefault();
 
-    console.log(event.target.textContent);
+    console.log(event);
 
-    
-})
+});
 
 elem.addEventListener("keydown", event => {
 
     console.log(event);
 
-    
-})
+});
+
+const instance = basicLightbox.create(`
+	<h1>Not closable</h1>
+	<p>It's not possible to close this lightbox with a click.</p>
+`, {
+    closable: false
+});
+
+console.log(instance);
+
 
 
 // we can use querySelectorAll, and use forEach for array
